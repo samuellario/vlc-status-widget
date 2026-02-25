@@ -1,0 +1,68 @@
+#vlc-terminal {
+    background: #000;
+    color: #C6A75E;
+    padding: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 11px;
+    border: 1px solid rgba(198, 167, 94, 0.2);
+    border-radius: 2px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 20px auto;
+}
+
+.vlc-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 10px;
+}
+
+.vlc-dot { 
+    width: 6px; 
+    height: 6px; 
+    background: #C6A75E; 
+    border-radius: 50%; 
+    box-shadow: 0 0 5px #C6A75E; 
+}
+
+.vlc-title { 
+    opacity: 0.6; 
+    font-size: 9px; 
+    letter-spacing: 2px; 
+}
+
+.vlc-body { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-bottom: 10px; 
+    font-size: 13px; 
+}
+
+.vlc-footer { 
+    opacity: 0.4; 
+    font-size: 9px; 
+    border-top: 1px solid rgba(255,255,255,0.05); 
+    padding-top: 10px; 
+}
+
+.vlc-ip { color: #fff; }
+
+.vlc-cursor { 
+    width: 6px; 
+    height: 14px; 
+    background: #C6A75E; 
+    animation: vlc-blink 1s infinite; 
+}
+
+@keyframes vlc-blink { 
+    0%, 100% { opacity: 0; } 
+    50% { opacity: 1; } 
+}
+
+#vlc-status-text {
+    transition: opacity 0.2s ease-in-out;
+}
